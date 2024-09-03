@@ -1,0 +1,176 @@
+/* Reset CSS default */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.logo {
+    max-width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+nav {
+    background: #444;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+    
+}
+
+section {
+    form {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 10px;
+        background: #f4f4f4;
+        border-radius: 5px;
+    }
+    
+    form label {
+        display: block;
+        margin: 10px 0 5px;
+    }
+    
+    form input, form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+    
+    form button {
+        background: #333;
+        color: #fff;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    form button:hover {
+        background: #555;
+    }
+    
+/* Atur gaya untuk gambar */
+.logo.png {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px 0;
+}
+
+
+    .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 10px;
+        padding: 10px;
+    }
+    
+    .gallery-grid img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    @media (max-width: 600px) {
+        .gallery-grid {
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        }
+    }
+
+    .testimonial {
+        background: #f4f4f4;
+        padding: 20px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .testimonial p {
+        font-style: italic;
+    }
+    
+    .testimonial cite {
+        display: block;
+        text-align: right;
+        font-weight: bold;
+    }
+    .subscription {
+        max-width: 500px;
+        margin: 20px auto;
+        text-align: center;
+    }
+    
+    .subscription input {
+        width: calc(100% - 110px);
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+    
+    .subscription button {
+        width: 100px;
+        padding: 10px;
+        background: #333;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .subscription button:hover {
+        background: #555;
+    }
+    
+}
+
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    bottom: 0;
+}
